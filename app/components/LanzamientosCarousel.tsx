@@ -12,6 +12,7 @@ const slides = [
       "Hidrata y rellena las capas más profundas de la piel, con resultados de 2× más producción de ácido hialurónico.",
     button: "Quiero conocerlo",
     href: "/lanzamiento/tukuma",
+    date: "12 Dic",
   },
   {
     imageDesktop: "/lanzamientos/pulpas-ekos.jpg",
@@ -21,6 +22,7 @@ const slides = [
       "Experimenta una piel más suave e hidratada con nuestras pulpas para manos de Ekos.",
     button: "Ver colección",
     href: "/coleccion/ekos",
+    date: "18 Nov",
   },
 ];
 
@@ -81,9 +83,10 @@ px-6 md:px-0 md:ml-16 items-end md:items-center px-6 pb-10 md:pb-0">
 
       <button
         onClick={next}
+        aria-label="Siguiente slide"
         className="absolute right-6 top-1/2 -translate-y-1/2 z-20 bg-white/80 w-12 h-12 rounded-full flex items-center justify-center hover:bg-white shadow"
       >
-        →
+        <img src="/iconos/flechad.png" alt="Siguiente" className="w-4 h-4 md:w-5 md:h-5" />
       </button>
     </section>
   );
